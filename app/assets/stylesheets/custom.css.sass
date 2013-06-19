@@ -1,0 +1,79 @@
+$pagewidth: 996px
+$blue: #607c9f
+$home_blue: #adc4cc
+$footer_hover: #8c9fa6
+$corral: #fc6565
+
+
+h1, h2, h3, h4, h5, h6, p, a
+  font-family: 'Raleway', sans-serif
+  font-weight: 200
+
+html
+  height: 100% !important
+
+body
+  height: 100%
+  font-family: 'Raleway', sans-serif
+  font-weight: 200
+
+.row
+  max-width: $pagewidth
+
+.container
+  position: relative
+  width: 1200px
+  min-height: 100%
+  overflow: visible
+  margin-top: 45px
+
+.button
+  text-transform: uppercase
+  border: none
+  box-shadow: none
+  background: #2396ae
+  &:hover
+    background: #1c859d
+
+.cta
+  text-align: center
+
+.hide-me
+  display: none
+
+/* header */
+.background-top-bar
+  height: 45px
+  background: $home_blue
+  width: 4000px
+  position: fixed
+  top: 0
+  left: 0
+.top-bar
+  max-width: 1200px
+  margin-bottom: 0 !important
+
+/* footer */
+
+footer
+  border-top: solid 1px #ccc
+  margin-left: 450px
+  background: $home_blue
+  max-width: 4000px
+  .footer-content
+    max-width: 750px
+    padding: 10px
+    padding-right: 0
+  ul
+    list-style: none
+    li
+      float: right
+      padding: 15px
+      a
+        color: #666
+        &:hover
+          color: #999
+      &.left
+        float: left
+  .vfa-info
+    text-align: center

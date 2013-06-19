@@ -1,0 +1,159 @@
+$blue: #607c9f
+$corral: #fc6565
+$nav_hover: #e3535b
+$nav_active: #b94a4a
+
+#home_top
+  height: 450px
+  .tag-row
+    height: 70px
+    padding-top: 20px
+    margin-top: 0
+    margin-bottom: 55px
+    text-align: center
+  .home-box
+    background: rgba(229, 59, 44, .8)
+    height: 270px
+    &:hover
+      background: rgba(229, 59, 44, 1)
+      cursor: pointer
+    &.active
+      background: rgba(229, 59, 44, 1)
+  .content
+    display: none
+    margin-top: 30px
+    .home-content-wrapper
+      background: rgba(0,0,0,.5)
+      padding: 15px
+      height: 300px
+
+.home-cta
+  a
+    margin-bottom: 85px
+    margin-top: 15px
+
+#press_bar
+  .press
+    height: 100px                       /* TEMP */
+    padding-top: 15px
+    padding-bottom: 15px
+    border-top: dashed 1px #ccc
+    border-bottom: dashed 1px #ccc
+
+#home_lower
+  margin: 30px 0
+  .row
+    background: rgba(0,0,0,.2)
+    margin-bottom: 30px
+    .home-lower-content
+      padding: 15px
+
+.map-nav
+  position: fixed
+  top: 45px
+  left: 0
+  width: 450px
+  height: 100%
+  color: #fff
+  z-index: 2
+  &.corral
+    background: $corral
+  .image-row
+    margin-top: 50px
+    .image-wrapper
+      height: 240px
+      width: 380px
+      margin: 0 20px
+      background: url('/assets/map.png')
+      background-repeat: none
+  .tab-row
+    .tab-title
+      float: left
+      color: #fff
+      font-size: 1.2em
+      padding: 15px
+      text-transform: lowercase
+      &.default-title
+        background: $nav_active
+      &:hover
+        background: $nav_hover
+      &.active-tab
+        background: $nav_active
+  .tagline
+    text-align: center
+    color: #fff
+    margin: 30px 0
+  .city-list
+    list-style: none
+    margin: 23px 0
+    margin-left: 14px
+    li
+      margin-bottom: 5px
+      .tab-title
+        color: #fff
+        font-size: 1.3em
+        padding: 0
+        span
+          padding: 0 10px
+        img
+          margin-bottom: -10px
+        &.default-title
+          span
+            background: $nav_active
+        &:hover
+          span
+            background: $nav_hover
+      .active-tab
+        span
+          background: $nav_active
+
+
+
+.content-container
+  margin-left: 450px
+  width: 750px
+  min-height: 80%
+  padding: 15px
+  padding-top: 0
+  .page-content
+    display: none
+    &.default-content
+      display: block
+    h1
+      margin-bottom: 5px
+      margin-top: 0
+    .tab-header
+      margin-top: 0
+    &.fellows
+      .fellow-row
+        margin-bottom: 30px
+        .fellow-wrapper
+          .fellow-summary
+            height: 225px
+            overflow: hidden
+            margin-bottom: 15px
+            .crop
+              img
+                max-height: 220px
+            h3
+              margin-top: 0
+          &.left-fellow
+            border-right: solid 1px #eee
+          p
+            span
+              font-size: 1.3em
+
+.expando-box
+  background: rgba(0,0,0,.2)
+  min-height: 50px
+  padding: 15px
+  margin-bottom: 30px
+  &:hover
+    cursor: pointer
+    background: rgba(0,0,0,.5)
+  .above-fold
+    margin-bottom: 15px
+  .below-fold
+    border-top: solid 1px #fff
+    padding-top: 15px
+
