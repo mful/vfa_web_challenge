@@ -1,13 +1,55 @@
 <footer>
   <div class="footer-content">
 
-  <ul class="row">
-    <li><a href="">test</a></li>
-    <li><a href="">test</a></li>
-    <li class="left">
-      <a href="">NEED SOCIAL LINKS</a>
-    </li>
-  </ul>
+  <div class="row">
+
+    <div class="small-6 column">
+      <div class="row">
+        <div class="small-4 column footer-about">
+          <h3><%= link_to 'About', about_path %></h3>
+        </div>
+
+        <div class="small-4 column">
+          <ul class="footer-list">
+            <li>
+              <%= link_to 'mission', about_path %>
+            </li>
+
+            <li>
+              <%= link_to 'what we do', about_path %>
+            </li>
+
+            <li>
+              <%= link_to 'team', about_path %>
+            </li>
+          </ul>
+        </div>
+
+        <div class="small-4 column">
+          <ul class="footer-list">
+            <li>
+              <%= link_to 'careers', about_path %>
+            </li>
+
+            <li>
+              <%= link_to 'contact', about_path %>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="small-6 column">
+      <ul class="footer-social">
+        <li><%= image_tag 'fb_logo.png', height: '40', width: '40' %></li>
+        <li><%= image_tag 'twitter_logo.png', height: '40', width: '40' %></li>
+        <li><%= image_tag 'li_logo.png', height: '40', width: '40' %></li>
+        <li><%= image_tag 'yt_logo.png', height: '40', width: '40' %></li>
+      </ul>
+    </div>
+
+  </div>
 
   <div class="row vfa-info">
     <p>

@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @home = true
   end
 
   def about
@@ -12,5 +13,8 @@ class PagesController < ApplicationController
   end
 
   def support
+  end
+
+  def contact
   end
 end

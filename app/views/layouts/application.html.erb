@@ -11,11 +11,19 @@
 
 <%= render partial: 'layouts/header' %>
 
+<% if @home == false %>
+
 <div class="container">
   <%= yield %>
 </div>
 
 <%= render partial: 'layouts/footer' %>
+
+<% end %>
+
+<% if @home == true %>
+  <%= yield %>
+<% end %>
 
 </body>
 </html>

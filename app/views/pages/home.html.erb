@@ -1,120 +1,24 @@
-<section id="home_top">
+<div id="home-background-color">
+  <div id="home_wrapper">
+    <section id="home_ctas">
+      <%= link_to 'apply', apply_path, class: 'large button corral-button' %>
+      <%= link_to 'learn', fellows_path, class: 'large button alt-button' %>
+    </section>
 
-<div class="row tag-row">
-  <div class="small-12 tagline">
-    <h1>Connecting Grads to Startups</h1>
-  </div>
-</div>
-
-<div class="row">
-  <div class="small-4 column">
-    <div class="home-box" id="home-box_1">
-
-    </div>
-  </div>
-
-  <div class="small-4 column">
-    <div class="home-box" id="home-box_2">
-
-    </div>
-  </div>
-
-  <div class="small-4 column">
-    <div class="home-box" id="home-box_3">
-
-    </div>
-  </div>
-</div>
-
-<div class="row content" id="content_1">
-  <div class="small-12 column">
-    <div class="home-content-wrapper">
-      Sample 1
-    </div>
-  </div>
-</div>
-
-<div class="row content" id="content_2">
-  <div class="small-12 column">
-    <div class="home-content-wrapper">
-      Sample 2
-    </div>
-  </div>
-</div>
-
-<div class="row content" id="content_3">
-  <div class="small-12 column">
-    <div class="home-content-wrapper">
-      Sample 3
-    </div>
-  </div>
-</div>
-
-</section>
-
-<div class="row cta home-cta">
-    <div class="small-12 column">
-      <%= link_to 'Apply', apply_path, class: "large button" %>
-    </div>
-  </div>
-
-<section id="press_bar">
-
-  <div class="row press">
-    <div class="small-2 column">
-      logo
-    </div>
-
-    <div class="small-2 column">
-      logo
-    </div>
-
-    <div class="small-2 column">
-      logo
-    </div>
-
-    <div class="small-2 column">
-      logo
-    </div>
-
-    <div class="small-2 column">
-      logo
-    </div>
-
-    <div class="small-2 column">
-      logo
-    </div>
-  </div>
-</section>
-
-<section id="home_lower">
-  <div class="row">
-    <div class="small-12 column">
-      <div class="home-lower-content">
-        <h3>Lets put some stuff here!</h3>
-
-        <p>
-          Lorem ipsum dolor sit amet, vel omnium audire efficiendi ad, vel eu cetero abhorreant suscipiantur. Ius saepe meliore volumus id, nam tempor aliquip tamquam at. Ea per periculis efficiendi, et eius tibique duo, nec ubique epicuri apeirian ex. Ut mea possit tamquam, eum eu possit suavitate suscipiantur. Dico habemus pro te. Est eu eros percipitur, cu eos congue graeci epicurei.
-
-          Mel et tota graecis copiosae, mel ad quot ferri debet. Verterem maiestatis at per. Ne feugiat concludaturque sea, utinam principes constituto sea ad. Ei quo erant adipiscing.
-        </p>
+    <div class="row press-row">
+      <div class="small-12">
+        <h3>Press</h3>
+        <%= image_tag('press/fastco.png') %>
+        <%= image_tag('press/huffpost.png') %>
+        <%= image_tag('press/nyt.png') %>
+        <%= image_tag('press/wsj.png') %>
       </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="small-12 column">
-      <div class="home-lower-content">
-        <h3>Lets put some stuff here!</h3>
+  <%= render partial: 'layouts/footer' %>
+</div>
 
-        <p>
-          Lorem ipsum dolor sit amet, vel omnium audire efficiendi ad, vel eu cetero abhorreant suscipiantur. Ius saepe meliore volumus id, nam tempor aliquip tamquam at. Ea per periculis efficiendi, et eius tibique duo, nec ubique epicuri apeirian ex. Ut mea possit tamquam, eum eu possit suavitate suscipiantur. Dico habemus pro te. Est eu eros percipitur, cu eos congue graeci epicurei.
 
-          Mel et tota graecis copiosae, mel ad quot ferri debet. Verterem maiestatis at per. Ne feugiat concludaturque sea, utinam principes constituto sea ad. Ei quo erant adipiscing.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
 
 

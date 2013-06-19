@@ -7,6 +7,7 @@ VfaWebChallenge::Application.routes.draw do
   match '/companies', to: 'pages#companies'
   match '/support', to: 'pages#support'
   match '/apply', to: 'pages#apply'
+  match '/contact', to: 'pages#contact'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

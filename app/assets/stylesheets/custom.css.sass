@@ -32,11 +32,26 @@ body
   border: none
   box-shadow: none
   background: #2396ae
+  font-family: 'Raleway', sans-serif
   &:hover
     background: #1c859d
+  &.corral-button
+    background: $corral
+    &:hover
+      background: #eb5454
+  &.alt-button
+    background: transparent
+    border: solid 3px $corral
+    color: $corral
+    padding: 17px 37px 18px 37px
+    border: none
+    &:hover
+      border-color: #eb5454
+      color: #eb5454
 
 .cta
   text-align: center
+  margin-top: 28px
 
 .hide-me
   display: none
@@ -52,11 +67,12 @@ body
 .top-bar
   max-width: 1200px
   margin-bottom: 0 !important
+  .logo
+    margin-top: 3px
 
 /* footer */
 
 footer
-  border-top: solid 1px #ccc
   margin-left: 450px
   background: $home_blue
   max-width: 4000px
@@ -64,16 +80,28 @@ footer
     max-width: 750px
     padding: 10px
     padding-right: 0
-  ul
-    list-style: none
-    li
-      float: right
-      padding: 15px
+    margin-top: 10px
+    .footer-about
+      border-right: solid 2px #fff
+      padding-top: 10px
+      padding-bottom: 10px
+      h3
+        color: #fff
+        margin-top: 10px
+        a
+          color: #fff
+    .footer-list
+      list-style: none
+      color: #fff
+      padding: 0
       a
-        color: #666
-        &:hover
-          color: #999
-      &.left
+        color: #fff
+    .footer-social
+      list-style: none
+      float: right
+      margin-top: 15px
+      li
         float: left
+        padding-left: 15px
   .vfa-info
     text-align: center

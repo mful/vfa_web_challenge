@@ -2,51 +2,29 @@ $blue: #607c9f
 $corral: #fc6565
 $nav_hover: #e3535b
 $nav_active: #b94a4a
+$home_blue: #adc4cc
 
-#home_top
-  height: 450px
-  .tag-row
-    height: 70px
-    padding-top: 20px
-    margin-top: 0
-    margin-bottom: 55px
-    text-align: center
-  .home-box
-    background: rgba(229, 59, 44, .8)
-    height: 270px
-    &:hover
-      background: rgba(229, 59, 44, 1)
-      cursor: pointer
-    &.active
-      background: rgba(229, 59, 44, 1)
-  .content
-    display: none
-    margin-top: 30px
-    .home-content-wrapper
-      background: rgba(0,0,0,.5)
-      padding: 15px
-      height: 300px
+/* home */
+#home-background-color
+  background: $home_blue
+  max-width: 4000px
+  max-height: 10000px
+  #home_wrapper
+    background: url('home-page-back.png')
+    height: 653px
+    width: 1200px
+    margin-top: 45px
+    #home_ctas
+      padding-top: 250px
+      padding-left: 300px
+    .press-row
+      padding-top: 300px
+      padding-left: 15px
+      float: left
+      margin-bottom: -90px
 
-.home-cta
-  a
-    margin-bottom: 85px
-    margin-top: 15px
 
-#press_bar
-  .press
-    height: 100px                       /* TEMP */
-    padding-top: 15px
-    padding-bottom: 15px
-    border-top: dashed 1px #ccc
-    border-bottom: dashed 1px #ccc
-
-#home_lower
-  margin: 30px 0
-  .row
-    background: rgba(0,0,0,.2)
-    margin-bottom: 30px
-    .home-lower-content
-      padding: 15px
+/* overall */
 
 .map-nav
   position: fixed
@@ -58,6 +36,12 @@ $nav_active: #b94a4a
   z-index: 2
   &.corral
     background: $corral
+  &.blue
+    background: $blue
+  &.support
+    background: #703e5f
+  &.about
+    background: #a5a57c
   .image-row
     margin-top: 50px
     .image-wrapper
@@ -82,21 +66,23 @@ $nav_active: #b94a4a
   .tagline
     text-align: center
     color: #fff
-    margin: 30px 0
+    margin-top: 28px
+    h2
+      color: #fff
   .city-list
     list-style: none
-    margin: 23px 0
+    margin-top: 28px
     margin-left: 14px
     li
-      margin-bottom: 5px
+      margin-bottom: 3px
       .tab-title
         color: #fff
-        font-size: 1.3em
+        font-size: 1em
         padding: 0
         span
           padding: 0 10px
         img
-          margin-bottom: -10px
+          margin-bottom: -7px
         &.default-title
           span
             background: $nav_active
@@ -115,6 +101,7 @@ $nav_active: #b94a4a
   min-height: 80%
   padding: 15px
   padding-top: 0
+  background: #fff
   .page-content
     display: none
     &.default-content
@@ -122,6 +109,10 @@ $nav_active: #b94a4a
     h1
       margin-bottom: 5px
       margin-top: 0
+    .contact-info
+      margin-left: 50px
+      line-height: 50px
+      font-weight: 400
     .tab-header
       margin-top: 0
     &.fellows
@@ -142,6 +133,12 @@ $nav_active: #b94a4a
           p
             span
               font-size: 1.3em
+    .company-row
+      margin-top: 30px
+      .company-pic
+        overflow: visible
+      .company-description
+        margin-top: 60px
 
 .expando-box
   background: rgba(0,0,0,.2)
